@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: criba
+      POSTGRES_USER: criba
+      POSTGRES_PASSWORD: criba
+    ports: ["5432:5432"]
+    volumes: [criba-db:/var/lib/postgresql/data]
+volumes:
+  criba-db:

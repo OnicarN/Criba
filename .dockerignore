@@ -1,0 +1,8 @@
+.env
+**/node_modules
+backend/target
+backend/data
+data
+demo
+samples
+backend/src/main/resources/static

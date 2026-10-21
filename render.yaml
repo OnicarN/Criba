@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: criba
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/plans
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: JWT_SECRET
+        generateValue: true
